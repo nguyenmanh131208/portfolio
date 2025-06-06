@@ -992,6 +992,10 @@ body.dark-theme .footer-link a:hover {
     padding: 8px;
     margin-right: 10px;
   }
+
+  .footer {
+    margin-top: 83px;
+  }
 }
 
 /* For Very Small Devices (320px and below) */
