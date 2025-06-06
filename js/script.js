@@ -65,98 +65,28 @@ document.addEventListener('contextmenu', function(event) {
   return false;
 });
 //Ngăn chọn văn bản
+document.addEventListener('selectstart', function(event) {
+  event.preventDefault();
+  return false;
+});
+// Scroll Reveal
 document.addEventListener('DOMContentLoaded', function () {
-  // Hiệu ứng cho toàn bộ section home
+  // Hiệu ứng cho các section chính
   ScrollReveal().reveal('#home', {
     origin: 'top',
-    distance: '80px',
-    duration: 1200,
+    distance: '60px',
+    duration: 1000,
     delay: 100,
     opacity: 0,
-    scale: 0.96,
+    scale: 0.97,
     easing: 'cubic-bezier(0.5, 0, 0, 1)',
     reset: true
   });
 
-  // Ảnh đại diện
-  ScrollReveal().reveal('#home .img', {
+  ScrollReveal().reveal('#about', {
     origin: 'left',
     distance: '60px',
     duration: 1000,
-    delay: 200,
-    opacity: 0,
-    scale: 0.95,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: true
-  });
-
-  // Tên người dùng
-  ScrollReveal().reveal('#home #userName', {
-    origin: 'top',
-    distance: '30px',
-    duration: 900,
-    delay: 350,
-    opacity: 0,
-    scale: 0.98,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: true
-  });
-
-  // Birthday và location
-  ScrollReveal().reveal('#home .birthday, #home .location', {
-    origin: 'top',
-    distance: '20px',
-    duration: 900,
-    delay: 450,
-    opacity: 0,
-    interval: 100,
-    scale: 0.98,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: true
-  });
-
-  // Mô tả
-  ScrollReveal().reveal('#home .desc', {
-    origin: 'bottom',
-    distance: '30px',
-    duration: 900,
-    delay: 600,
-    opacity: 0,
-    scale: 0.98,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: true
-  });
-
-  // Các nút mạng xã hội
-  ScrollReveal().reveal('#home .link-btn .social-btn', {
-    origin: 'bottom',
-    distance: '20px',
-    duration: 900,
-    delay: 700,
-    opacity: 0,
-    interval: 120,
-    scale: 0.98,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: true
-  });
-
-  // Nút scroll down
-  ScrollReveal().reveal('#scroll-down-btn', {
-    origin: 'bottom',
-    distance: '40px',
-    duration: 1000,
-    delay: 1100,
-    opacity: 0,
-    scale: 0.98,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: true
-  });
-
-  // ======= ABOUT SECTION =======
-  ScrollReveal().reveal('#about .about-info', {
-    origin: 'left',
-    distance: '60px',
-    duration: 1200,
     delay: 200,
     opacity: 0,
     scale: 0.97,
@@ -164,34 +94,10 @@ document.addEventListener('DOMContentLoaded', function () {
     reset: true
   });
 
-  ScrollReveal().reveal('#about .about-box', {
-    origin: 'right',
-    distance: '60px',
-    duration: 1200,
-    delay: 400,
-    opacity: 0,
-    scale: 0.97,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: true
-  });
-
-  ScrollReveal().reveal('#about .interest-box', {
-    origin: 'bottom',
-    distance: '30px',
-    duration: 900,
-    delay: 600,
-    opacity: 0,
-    interval: 120,
-    scale: 0.98,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: true
-  });
-
-  // ======= CONTACT SECTION =======
   ScrollReveal().reveal('#contact', {
-    origin: 'top',
+    origin: 'bottom',
     distance: '60px',
-    duration: 1200,
+    duration: 1000,
     delay: 200,
     opacity: 0,
     scale: 0.97,
@@ -199,38 +105,13 @@ document.addEventListener('DOMContentLoaded', function () {
     reset: true
   });
 
-  ScrollReveal().reveal('#contact .contact-box', {
-    origin: 'bottom',
-    distance: '40px',
-    duration: 1000,
-    delay: 400,
-    opacity: 0,
-    interval: 150,
-    scale: 0.98,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: true
-  });
-
-  // Footer
   ScrollReveal().reveal('.footer-main', {
     origin: 'bottom',
-    distance: '60px',
-    duration: 1200,
+    distance: '40px',
+    duration: 900,
     delay: 200,
     opacity: 0,
     scale: 0.96,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: true
-  });
-
-  ScrollReveal().reveal('.footer-link a', {
-    origin: 'bottom',
-    distance: '20px',
-    duration: 900,
-    delay: 400,
-    opacity: 0,
-    interval: 100,
-    scale: 0.98,
     easing: 'cubic-bezier(0.5, 0, 0, 1)',
     reset: true
   });
