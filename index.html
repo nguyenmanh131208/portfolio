@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./img/nino-fav.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./style/reset.css">
@@ -14,8 +13,15 @@
     <title>NguyenMauManh - Portfolio Website</title>
 </head>
 <body class="smooth-transition">
+  <div class="loader">
+    <svg viewBox="25 25 50 50">
+    <circle r="20" cy="50" cx="50"></circle>
+    </svg>
+  </div>
+
+<!-- From Uiverse.io by RiccardoRapelli --> 
 <label class="switch">
-  <input id="input" type="checkbox" />
+  <input id="input" type="checkbox" checked="darkTheme" />
   <div class="slider round">
     <div class="sun-moon">
       <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
@@ -81,9 +87,10 @@
   </div>
 </label>
 
+    <div id="particles-js"></div>
+
     <main class="container">
             <div id="home" class="full-height">
-              <div id="particles-js"></div>
                 <div class="infomation">
                     <div class="img">
                         <img src="./img/nino-avt.jpg">
@@ -195,107 +202,106 @@
               </div>
             </div>
             <div id="contact" class="full-height">
-              <h1>Contact With Me</h1>
-              <div class="contact-box">
-                <a href="https://github.com/nguyenmanh131208">
-                  <div class="contact-box-details">
-                    <div class="wrapper-start">
-                      <div class="icon-box">
-                        <i class="fa-brands fa-github"></i>
-                      </div>
-                      <div class="details-box">
-                        <h3>Github</h3>
-                        <p>nguyenmanh131208</p>
-                        <p>Where I upload and share my projects and source code.</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a href="https://www.facebook.com/NMMiuEm/">
-                  <div class="contact-box-details">
-                    <div class="wrapper-start">
-                      <div class="icon-box">
-                        <i class="fa-brands fa-facebook-f"></i>
-                      </div>
-                      <div class="details-box">
-                        <h3>Facebook</h3>
-                        <p>NMMiuEm</p>
-                        <p>My personal page for updates and connections.</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a href="https://www.instagram.com/nmmiuem/">
-                  <div class="contact-box-details">
-                    <div class="wrapper-start">
-                      <div class="icon-box">
-                        <i class="fa-brands fa-instagram"></i>
-                      </div>
-                      <div class="details-box">
-                        <h3>Instagram</h3>
-                        <p>@nmmiuem</p>
-                        <p>I'm not using this social meadia app too much.</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="remaining-box">
-                  <a href="https://www.tiktok.com/@kwann188">
-                    <div class="contact-box-details">
-                      <div class="wrapper-start">
-                        <div class="icon-box">
-                          <i class="fa-brands fa-tiktok"></i>
-                        </div>
-                        <div class="details-box">
-                          <h3>Tiktok</h3>
-                          <p>@kwann188</p>
-                          <p>For both my educational pursuits and entertainment needs.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="https://locket.cam/iuemmratnhiuu">
-                    <div class="contact-box-details">
-                      <div class="wrapper-start">
-                        <div class="icon-box">
-                          <i class="fa-brands fa-github"></i>
-                        </div>
-                        <div class="details-box">
-                          <h3>Locket</h3>
-                          <p>@iuemmratnhiuu</p>
-                          <p>For sharing life's little moments with friends via Locket.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-              </div>
-              <div class="footer">
-                <div class="footer-main">
-                  <div class="footer-info">
-                    <h3>Nguyễn Mậu Mạnh</h3>
-                    <p>© 2025 - All rights reserved</p>
-                  </div>
-                  <div class="idea-box">
-                    <p>Idea from <a class="smooth-transition" href="https://github.com/thanhdo1110">thanhdo1110</a></p>
-                  </div>
-                  <div class="footer-link">
-                    <a href="https://github.com/nguyenmanh131208">
-                      <i class="fa-brands fa-github fa-xl"></i>
-                    </a>
-                    <a href="https://www.facebook.com/NMMiuEm/">
-                      <i class="fa-brands fa-facebook fa-xl"></i>
-                    </a>
-                    <a href="https://www.instagram.com/nmmiuem/">
-                      <i class="fa-brands fa-instagram fa-xl"></i>
-                    </a>
-                    <a href="https://locket.cam/iuemmratnhiuu">
-                      <i class="fa-regular fa-heart fa-xl"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <h1>Contact With Me</h1>
+  
+  <div class="contact-box">
+    <a href="https://github.com/nguyenmanh131208">
+      <div class="contact-box-details">
+        <div class="wrapper-start">
+          <div class="icon-box">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div class="details-box">
+            <h3>Github</h3>
+            <p>nguyenmanh131208</p>
+            <p>Where I upload and share my projects and source code.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.facebook.com/NMMiuEm/">
+      <div class="contact-box-details">
+        <div class="wrapper-start">
+          <div class="icon-box">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="details-box">
+            <h3>Facebook</h3>
+            <p>NMMiuEm</p>
+            <p>My personal page for updates and connections.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.instagram.com/nmmiuem/">
+      <div class="contact-box-details">
+        <div class="wrapper-start">
+          <div class="icon-box">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="details-box">
+            <h3>Instagram</h3>
+            <p>@nmmiuem</p>
+            <p>I'm not using this social meadia app too much.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.tiktok.com/@kwann188">
+      <div class="contact-box-details">
+        <div class="wrapper-start">
+          <div class="icon-box">
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+          <div class="details-box">
+            <h3>Tiktok</h3>
+            <p>@kwann188</p>
+            <p>For both my educational pursuits and entertainment needs.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="https://locket.cam/iuemmratnhiuu">
+      <div class="contact-box-details">
+        <div class="wrapper-start">
+          <div class="icon-box">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div class="details-box">
+            <h3>Locket</h3>
+            <p>@iuemmratnhiuu</p>
+            <p>For sharing life's little moments with friends via Locket.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="footer">
+    <div class="footer-main">
+      <div class="footer-info">
+        <h3>Nguyễn Mậu Mạnh</h3>
+        <p>© 2025 - All rights reserved</p>
+      </div>
+      <div class="idea-box">
+        <p>Idea from <a class="smooth-transition" href="https://github.com/thanhdo1110">thanhdo1110</a></p>
+      </div>
+      <div class="footer-link">
+        <a href="https://github.com/nguyenmanh131208">
+          <i class="fa-brands fa-github fa-xl"></i>
+        </a>
+        <a href="https://www.facebook.com/NMMiuEm/">
+          <i class="fa-brands fa-facebook fa-xl"></i>
+        </a>
+        <a href="https://www.instagram.com/nmmiuem/">
+          <i class="fa-brands fa-instagram fa-xl"></i>
+        </a>
+        <a href="https://locket.cam/iuemmratnhiuu">
+          <i class="fa-regular fa-heart fa-xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
     </main>
 
     <script src="./js/script.js"></script>

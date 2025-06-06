@@ -1,9 +1,38 @@
+// LOADER
+const loader = document.querySelector('.loader');
+window.addEventListener('load', () => {
+  if (loader) {
+    loader.style.opacity = '0';
+    loader.style.pointerEvents = 'none';
+    setTimeout(() => {
+      loader.style.display = 'none';
+    }, 300);
+  }
+});
+// DARK THEME
 const toggle = document.getElementById('theme-switch');
 const titleElement = document.querySelector('title');
+
 document.addEventListener('DOMContentLoaded', function () {
   // Get the checkbox input element
   const toggleInput = document.getElementById('input');
   const bodyElement = document.body;
+
+  // Kiểm tra dark mode hệ điều hành
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  // Thiết lập trạng thái ban đầu cho toggle và theme
+  if (prefersDark) {
+    toggleInput.checked = true;
+    bodyElement.classList.add('dark-theme');
+    bodyElement.style.backgroundColor = 'black';
+    bodyElement.style.color = 'white';
+  } else {
+    toggleInput.checked = false;
+    bodyElement.classList.remove('dark-theme');
+    bodyElement.style.backgroundColor = 'white';
+    bodyElement.style.color = 'black';
+  }
 
   function applyTheme() {
     if (toggleInput.checked) {

@@ -20,15 +20,63 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-.container {
   .container {
     max-width: 1140px;
     margin: 0 auto;
     width: 100%;
     min-height: 100vh;
   }
-}
 /* ==========MAIN CSS========== */
+/* ==========LOADER========== */
+.loader {
+  position: fixed;
+  z-index: 9999;
+  background: #fff;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s;
+}
+svg {
+ width: 5em;
+ transform-origin: center;
+ animation: rotate4 2s linear infinite;
+}
+
+circle {
+ fill: none;
+ stroke: hsl(214, 97%, 59%);
+ stroke-width: 2;
+ stroke-dasharray: 1, 200;
+ stroke-dashoffset: 0;
+ stroke-linecap: round;
+ animation: dash4 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate4 {
+ 100% {
+  transform: rotate(360deg);
+ }
+}
+
+@keyframes dash4 {
+ 0% {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+ }
+
+ 50% {
+  stroke-dasharray: 90, 200;
+  stroke-dashoffset: -35px;
+ }
+
+ 100% {
+  stroke-dashoffset: -125px;
+ }
+}
+/* ==========END LOADER========== */
+
 canvas {
   display: block;
   vertical-align: bottom;
@@ -79,18 +127,18 @@ canvas {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   position: absolute;
-  z-index: -10000;
+  z-index: -9999;
 }
 
 /* DARK MODE BUTTON */ 
 .switch {
-  position: fixed;
+  position: absolute;
   display: inline-block;
   width: 60px;
   height: 34px;
+  z-index: 999;
   left: 10px;
   top: 10px;
-  z-index: 100000;
 }
 
 .switch #input {
@@ -664,14 +712,6 @@ canvas {
   line-height: 1.5;
 }
 
-.remaining-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  margin-top: 28px;
-  padding: 0 24px;
-}
-
 .contact-box a {
   text-decoration: none;
   color: inherit;
@@ -732,6 +772,14 @@ canvas {
 /* ==========END MAIN CSS========== */
 
 /* ==========DARK THEME========== */
+body.dark-theme .loader {
+  background-color: black;
+}
+
+body.dark-theme circle {
+  stroke: rgb(124 58 237);
+}
+
 body.dark-theme .img img {
   border: solid 3px rgb(139 92 246);
   object-fit: cover;
@@ -896,8 +944,7 @@ body.dark-theme .footer-link a:hover {
 
 /* For Tablet Portrait and Mobile Landscape (768px and below) */
 @media screen and (max-width: 768px) {
-  .contact-box,
-  .remaining-box {
+  .contact-box {
     grid-template-columns: 1fr;
   }
 
