@@ -132,7 +132,7 @@ canvas {
 
 /* DARK MODE BUTTON */ 
 .switch {
-  position: absolute;
+  position: fixed;
   display: inline-block;
   width: 60px;
   height: 34px;
@@ -622,7 +622,7 @@ canvas {
 
 .main-box span:first-child,
 .main-box span:last-child {
-  color: rgb(0, 110, 220); /* Đổi sang màu xanh dương */
+  color: rgb(0, 122, 255); /* Đổi sang màu xanh dương */
 }
 
 .main-box span:nth-child(2) {
