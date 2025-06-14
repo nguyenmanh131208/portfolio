@@ -2,6 +2,11 @@
 A sleek, modern, and fully responsive personal portfolio website designed to showcase my skills in front-end development, user interface design, and creating engaging web experiences. This project is not just a resume; it's a live demonstration of my passion for technology and clean code.<br><br>
 
 ✨ <a href="https://maumanh.netlify.app">Live Demo</a> ✨<br>
+<h1>Demo</h1>
+![Home](./preview/home.png)
+![About](./preview/about.png)
+![Contact Via Social](./preview/contact-via-social.png.png)
+![Contact Via Email](./preview/contact-via-email.png.png)
 
 🚀 Key Features<br>
 This portfolio is built with a focus on interactivity, aesthetics, and a seamless user experience.<br>
@@ -48,7 +53,8 @@ The project files are organized in a clean and logical manner:
 ├── .gitignore          # Specifies intentionally untracked files to ignore
 ├── index.html          # The main HTML file for the portfolio
 └── README.md           # You are here!
-``` <br>
+``` 
+<br>
 🚀 Getting Started
 To get a local copy up and running, follow these simple steps.<br>
 
@@ -56,14 +62,16 @@ Prerequisites
 You will need a web browser and a code editor (like VS Code) to view and edit the files.
 
 Installation
-Clone the repository:
+Clone the repository:<br>
 ```
 git clone https://github.com/nguyenmanh131208/portfolio.git
 ```
-Navigate to the project directory:
+<br>
+Navigate to the project directory:<br>
 ```
 cd portfolio
-```<br>
+```
+<br>
 Open index.html in your browser: Simply open the index.html file in your favorite web browser to view the website locally. No complex build steps are required.<br>
 📫 Let's Connect!<br>
 I'm always open to connecting, collaborating, or discussing new opportunities. Feel free to reach out!
