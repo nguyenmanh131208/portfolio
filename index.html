@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./img/nino-fav.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>NguyenMauManh - Portfolio Website</title>
+</head>
+<body class="smooth-transition">
+  <div class="loader">
+    <svg viewBox="25 25 50 50">
+    <circle r="20" cy="50" cx="50"></circle>
+    </svg>
+  </div>
+
+    <div id="particles-js"></div>
+
+    <main class="container">
+    <label class="switch">
+  <input id="input" type="checkbox"/>
+  <div class="slider round">
+    <div class="sun-moon">
+      <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+
+      <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+    </div>
+    <div class="stars">
+      <svg id="star-1" class="star" viewBox="0 0 20 20">
+        <path
+          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+        ></path>
+      </svg>
+      <svg id="star-2" class="star" viewBox="0 0 20 20">
+        <path
+          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+        ></path>
+      </svg>
+      <svg id="star-3" class="star" viewBox="0 0 20 20">
+        <path
+          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+        ></path>
+      </svg>
+      <svg id="star-4" class="star" viewBox="0 0 20 20">
+        <path
+          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+        ></path>
+      </svg>
+    </div>
+  </div>
+</label>
+            <section id="home" class="full-height">
+                <div class="infomation">
+                    <div class="img">
+                        <img src="./img/nino-avt.jpg">
+                    </div>
+                    <h1 id="userName">NguyenMauManh</h1>
+                    <div class="birthday">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>13/12/2008</span>
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Tân Uyên, Bình Dương</span>
+                    </div>
+                    <p class="desc">Passionate about learning technology and creating beautiful web interfaces, ...</p>
+                    <div class="link-btn">
+                        <a class="social-btn" href="https://github.com/nguyenmanh131208">
+                            <span>
+                              <i class="fa-brands fa-github fa-xl"></i>
+                            </span>
+                            Github
+                        </a>
+                        <a class="social-btn" href="https://www.facebook.com/NMMiuEm/">
+                            <span>
+                              <i class="fa-brands fa-facebook-f fa-xl"></i>
+                            </span>
+                            Facebook
+                        </a>
+                        <a class="social-btn" href="https://www.instagram.com/nmmiuem/">
+                            <span>
+                              <i class="fa-brands fa-instagram fa-xl"></i>
+                            </span>
+                              Instagram
+                        </a>
+                        <a class="social-btn" href="https://www.tiktok.com/@kwann188">
+                            <span>
+                                <i class="fa-brands fa-tiktok fa-xl"></i>
+                            </span>
+                            Tiktok
+                        </a>
+                        <a class="social-btn" href="https://locket.cam/iuemmratnhiuu">
+                            <span>
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                            </span>
+                            Locket
+                        </a>
+                    </div>
+                </div>
+                <div id="scroll-down-btn">
+                    <a href="#about">Scroll down</a>
+                </div>
+            </section>
+            <section id="about" class="full-height">
+              <div class="wrapper">
+                <div class="about-info">
+                  <h1>About Me</h1>
+                  <p>Hi, I'm Mạnh,
+                     I was born on 13/13/2008. 
+                     I have a strong passion for web front-end development, 
+                     focusing on creating intuitive and smooth user interfaces.
+                  </p>
+                  <p>Besides coding, 
+                    I find joy and relaxation in the world of gaming. 
+                    My favorite games are not just for entertainment but also a source of inspiration and problem-solving skills.
+                  </p>
+                  <p>
+                    My general passion for technology drives me to constantly explore new trends and tools, always eager to expand my knowledge and skills in this exciting field.
+                  </p>
+                  <div class="interest-box">
+                    <h3>Interests</h3>
+                    <div class="box-container">
+                      <span>Technology</span>
+                      <span>Web Exploitation</span>
+                      <span>CSS Frameworks</span>
+                      <span>Front-End Development</span>
+                      <span>Responsive Web Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="about-box">
+                  <div class="about-box-details">
+                    <div class="main-box">
+                      <span><i class="fa-regular fa-heart fa-xl"></i></i></span>
+                      <span>My daily life</span>
+                      <span>Locket</span>
+                    </div>
+                  </div>
+                  <div class="about-box-details">
+                    <div class="main-box">
+                      <span><i class="fa-solid fa-code fla-xl"></i></span>
+                      <span>Projects Made</span>
+                      <span>3+</span>
+                    </div>
+                  </div>
+                  <div class="about-box-details">
+                    <div class="main-box">
+                      <span><i class="fa-brands fa-facebook-f fa-xl"></i></span>
+                      <span>Connection</span>
+                      <span>Facebook</span>
+                    </div>
+                  </div>
+                  <div class="about-box-details">
+                    <div class="main-box">
+                      <span><i class="fa-brands fa-tiktok fa-xl"></i></span>
+                      <span>Entertainment</span>
+                      <span>Tiktok</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="project" class="full-height">
+              <h1>Project Made</h1>
+              <div class="row row-cols-1 row-cols-md-2 g-4 project-container">
+  <div class="col">
+    <div class="card">
+      <img src="./img/portfolio.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Portfolio Website</h5>
+        <p class="card-text">This project is my personal portfolio website, meticulously crafted to showcase my skills and completed works.</p>
+        <a href="https://github.com/nguyenmanh131208/portfolio" class="card-link">Source Code <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="./img/love-day-counter.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Love Day Counter</h5>
+        <p class="card-text">An enhanced "Love Day Counter" with built-in music for a complete romantic experience.</p>
+        <a href="https://github.com/nguyenmanh131208/love-days-counter" class="card-link">Source Code <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+            </section>
+            <section id="contact-via-social" class="full-height">
+  <h1>Contact With Me</h1>
+  
+  <div class="contact-box">
+    <a href="https://github.com/nguyenmanh131208">
+      <div class="contact-box-details">
+        <div class="wrapper-start">
+          <div class="icon-box">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div class="details-box">
+            <h3>Github</h3>
+            <p>nguyenmanh131208</p>
+            <p>Where I upload and share my projects and source code.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.facebook.com/NMMiuEm/">
+      <div class="contact-box-details">
+        <div class="wrapper-start">
+          <div class="icon-box">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="details-box">
+            <h3>Facebook</h3>
+            <p>NMMiuEm</p>
+            <p>My personal page for updates and connections.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.instagram.com/nmmiuem/">
+      <div class="contact-box-details">
+        <div class="wrapper-start">
+          <div class="icon-box">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="details-box">
+            <h3>Instagram</h3>
+            <p>@nmmiuem</p>
+            <p>I'm not using this social meadia app too much.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.tiktok.com/@kwann188">
+      <div class="contact-box-details">
+        <div class="wrapper-start">
+          <div class="icon-box">
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+          <div class="details-box">
+            <h3>Tiktok</h3>
+            <p>@kwann188</p>
+            <p>For both my educational pursuits and entertainment needs.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="https://locket.cam/iuemmratnhiuu">
+      <div class="contact-box-details">
+        <div class="wrapper-start">
+          <div class="icon-box">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="details-box">
+            <h3>Locket</h3>
+            <p>@iuemmratnhiuu</p>
+            <p>For sharing life's little moments with friends via Locket.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+            </section>
+            <section id="contact-via-email" class="full-height">
+              <h1>Or Email Me</h1>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <div class="contact-container">
+                  <form name="contact" id="contact-form" method="POST" netlify>
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div class="input-group">
+                  <input autocomplete="off" type="text" id="name" name="name" class="input-field" placeholder="Full Name">
+                  <i class="fa-solid fa-user input-icon"></i>
+                  <i class="fa-solid fa-circle-check validation-icon success-icon"></i>
+                  <i class="fa-solid fa-circle-exclamation validation-icon error-icon"></i>
+                  <span class="validation-message">Name can not be left blank</span>
+              </div>
+  
+              <div class="input-group">
+                  <input autocomplete="off" type="email" id="email" name="email" class="input-field" placeholder="Email Address">
+                  <i class="fa-solid fa-envelope input-icon"></i>
+                  <i class="fa-solid fa-circle-check validation-icon success-icon"></i>
+                  <i class="fa-solid fa-circle-exclamation validation-icon error-icon"></i>
+                  <span class="validation-message">Email can not be left blank.</span>
+              </div>
+  
+              <div class="input-group">
+                <input autocomplete="off" type="text" id="subject" name="subject" class="input-field" placeholder="Subject">
+                <i class="fa-solid fa-tag input-icon"></i>
+                <i class="fa-solid fa-circle-check validation-icon success-icon"></i>
+                <i class="fa-solid fa-circle-exclamation validation-icon error-icon"></i>
+                <span class="validation-message">Subject can not be left blank.</span>
+            </div>
+              
+              <div class="input-group">
+                  <textarea id="message" name="message" class="textarea-field" placeholder="Message Content..."></textarea>
+
+                  <i class="fa-solid fa-pen input-icon"></i>
+                  <i class="fa-solid fa-circle-check validation-icon success-icon"></i>
+                  <i class="fa-solid fa-circle-exclamation validation-icon error-icon"></i>
+
+                  <span class="validation-message">Message can not be left blank.</span>
+              </div>
+                    <button type="submit" class="submit-btn">
+                      Gửi Tin Nhắn
+                      <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </section>
+
+            <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-info">
+        <h3>Nguyễn Mậu Mạnh</h3>
+        <p>© 2025 - All rights reserved</p>
+      </div>
+      <!-- <div class="idea-box">
+        <p>Idea from <a class="smooth-transition" href="https://github.com/thanhdo1110">thanhdo1110</a></p>
+      </div> -->
+      <div class="footer-link">
+        <a href="https://github.com/nguyenmanh131208">
+          <i class="fa-brands fa-github fa-xl"></i>
+        </a>
+        <a href="https://www.facebook.com/NMMiuEm/">
+          <i class="fa-brands fa-facebook fa-xl"></i>
+        </a>
+        <a href="https://www.instagram.com/nmmiuem/">
+          <i class="fa-brands fa-instagram fa-xl"></i>
+        </a>
+        <a href="https://locket.cam/iuemmratnhiuu">
+          <i class="fa-regular fa-heart fa-xl"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+    </main>
+
+    <!--  MODAL -->
+    <div id="form-status-modal" class="nmm-modal-overlay">
+      <div class="nmm-modal-content">
+        <div class="nmm-modal-header">
+          <div class="nmm-modal-icon">
+            </div>
+          <h2 class="nmm-modal-title"></h2>
+        </div>
+        <div class="nmm-modal-body">
+          <p class="nmm-modal-message"></p>
+        </div>
+        <div class="nmm-modal-footer">
+          <button class="nmm-modal-button">Đóng</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/particles.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
