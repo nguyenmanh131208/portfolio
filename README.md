@@ -2,11 +2,6 @@
 A sleek, modern, and fully responsive personal portfolio website designed to showcase my skills in front-end development, user interface design, and creating engaging web experiences. This project is not just a resume; it's a live demonstration of my passion for technology and clean code.<br><br>
 
 ✨ <a href="https://maumanh.netlify.app">Live Demo</a> ✨<br>
-<h1>Demo</h1>
-![Home](./preview/home.png)
-![About](./preview/about.png)
-![Contact Via Social](./preview/contact-via-social.png.png)
-![Contact Via Email](./preview/contact-via-email.png.png)
 
 🚀 Key Features<br>
 This portfolio is built with a focus on interactivity, aesthetics, and a seamless user experience.<br>
@@ -66,7 +61,6 @@ Clone the repository:<br>
 ```
 git clone https://github.com/nguyenmanh131208/portfolio.git
 ```
-<br>
 Navigate to the project directory:<br>
 ```
 cd portfolio
