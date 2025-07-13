@@ -8,12 +8,12 @@
   "theme_color": "#3498db",
   "icons": [
     {
-      "src": "img/nino-fav.jpg",
+      "src": "img/fav-192.jpg",
       "sizes": "192x192",
       "type": "image/jpeg"
     },
     {
-      "src": "img/nino-fav.jpg",
+      "src": "img/fav-512.jpg",
       "sizes": "512x512",
       "type": "image/jpeg"
     }
