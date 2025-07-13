@@ -1,21 +1,21 @@
 {
   "name": "NguyenMauManh - Portfolio Website",
   "short_name": "Manh's Portfolio",
-  "description": "Một trang web portfolio cá nhân đẹp, hiện đại và hoàn toàn đáp ứng được thiết kế để thể hiện các kỹ năng của tôi trong phát triển front-end, thiết kế giao diện người dùng và tạo ra trải nghiệm web hấp dẫn.",
-  "start_url": "/index.html",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#fff",
-  "theme_color": "#3498db",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "description": "MauManh Portfolio Website",
   "icons": [
     {
-      "src": "img/fav-192.jpg",
+      "src": "/img/fav-192.jpg",
       "sizes": "192x192",
-      "type": "image/jpeg"
+      "type": "image/gif"
     },
     {
-      "src": "img/fav-512.jpg",
+      "src": "/img/fav-512.jpg",
       "sizes": "512x512",
-      "type": "image/jpeg"
+      "type": "image/gif"
     }
   ]
 }
